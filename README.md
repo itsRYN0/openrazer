@@ -260,6 +260,7 @@ The devices below are fully feature supported by OpenRazer, which means all avai
 ### Misc
 | Device                                        | USB VID:PID |
 | --------------------------------------------- | ----------- |
+| Razer Mouse Dock Pro                          |  1532:00A4  |
 | Razer Mouse Dock                              |  1532:007E  |
 | Razer Nostromo                                |  1532:0111  |
 | Razer Orbweaver                               |  1532:0113  |
