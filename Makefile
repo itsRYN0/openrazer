@@ -35,7 +35,7 @@ all: driver
 driver:
 	@echo -e "\n::\033[32m Compiling OpenRazer kernel modules\033[0m"
 	@echo "========================================"
-	$(MAKE) -C $(KERNELDIR) M=$(DRIVERDIR) modules
+	$(MAKE) -C $(KERNELDIR) M="$(DRIVERDIR)" modules
 
 driver_clean:
 	@echo -e "\n::\033[32m Cleaning OpenRazer kernel modules\033[0m"
