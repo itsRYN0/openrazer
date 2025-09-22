@@ -772,7 +772,9 @@ static ssize_t razer_attr_write_matrix_effect_wave(struct device *dev, struct de
         // Direction values are flipped compared to other devices
         direction ^= ((1<<0) | (1<<1));
         request = razer_chroma_extended_matrix_effect_wave(VARSTORE, ZERO_LED, direction);
-        (request.transaction_id.id == 0xFF) ? request.transaction_id.id = 0xFF : request.transaction_id.id = 0x1F;
+        if (request.transaction_id.id != 0xFF) {
+            request.transaction_id.id = 0x1F);
+        }
         break;
 
     default:
